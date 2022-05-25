@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>B'rooming</title>
+
+<style type="text/css">
+	html {font-size: 20px;}
+	body, li, ul, footer{margin: 0; padding: 0;}
+	.row{width: 1280px; margin: auto;}
+
+	.broom{float: left; font-size: 4.2rem; margin-top: 0px;}
+	.broom  p{margin: 0; font-weight: 200;}
+	ul{width: 500px; height: 50px; float: right;}
+	li{list-style-type: none; width: 33.3%; height: 50px; float: left; text-align: center;  margin-top: 50px;}
+	li a {font-size: 1.2rem; display: block; color: black; text-decoration: none; font-weight: 300;}
+	nav {position: relative; z-index: 4;}
+	.main-bg{width: 100%; height: 1600px; background: url('sky.png'); background-size: cover; background-position: center; background-attachment: fixed; }
+
+	.line{width: 100%; min-width: 100%; position: absolute; top: 65%; left: 50%; transform: translate(-50%,-50%);}
+
+	.box:hover {animation-name: shake; animation-duration: 3s; animation-iteration-count: infinite;}
+	@keyframes shake{
+		0%{transform: rotate(0deg);}
+		25%{transform: rotate(-10deg);}
+		50%{transform: rotate(10deg);}
+		75%{transform: rotate(-10deg);}
+		0%{transform: rotate(0deg);}}
+	.box{text-align: center; position: relative; z-index: 1; top: 200px; cursor: pointer;}
+
+
+
+	.flo{ animation-name: turn; animation-duration: 15s; animation-iteration-count: infinite;}
+	@keyframes turn{
+		0%{transform: rotate(0deg);}
+		100%{transform: rotate(360deg) scale(0.7);}}
+	.flo{width: 150px; position: relative; z-index: 5; top: -700px; left:40px;}
+
+	.flo1{ animation-name: turn1; animation-duration: 15s; animation-iteration-count: infinite;}
+	@keyframes turn1{
+		0%{transform: rotate(0deg);}
+		100%{transform: rotate(-360deg) scale(1.3);}}
+	.flo1{width: 150px; position: relative; z-index: 5;top: -200px; left:1000px;}
+
+
+
+	.overview{margin-top: 300px; width: 100%; height: 1000px; background: url(bg-font.png); background-size: 100%; background-repeat: no-repeat;}
+
+</style>
+</head>
+<body>
+	<div class="main-bg">
+		<nav>
+			<div class="row">
+				<div class="broom">
+					<p>B'rooming project</p></div>
+				<ul class="navi">
+					<li><a href="#">overview</a></li>
+					<li><a href="#">archive</a></li>
+					<li><a href="#">items</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="line">
+			<img src="line.svg">
+		</div>
+
+		<div class="row">	
+			<div class="box">
+				<p><img src="box.png" style="width:1000px;"><p>
+			</div>
+		
+			<div class="flo">
+				<img src="flo1.png" style="width:150px">
+			</div>
+
+			<div class="flo1">
+				<img src="flo1.png" style="width:150px">
+			</div>
+		</div>
+	
+
+
+	</div>
+
+<section>
+	<div class="overview">
+		
+	</div>
+
+</section>
+
+
+
+</body>
+</html>
