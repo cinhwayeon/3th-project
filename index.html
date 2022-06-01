@@ -16,36 +16,82 @@
 	li{list-style-type: none; width: 33.3%; height: 50px; float: left; text-align: center;  margin-top: 50px;}
 	li a {font-size: 1.2rem; display: block; color: black; text-decoration: none; font-weight: 300;}
 	nav {position: relative; z-index: 4;}
-	.main-bg{width: 100%; height: 1600px; background: url('sky.png'); background-size: cover; background-position: center; background-attachment: fixed; }
-
-	.line{width: 100%; min-width: 100%; position: absolute; top: 65%; left: 50%; transform: translate(-50%,-50%);}
-
-	.box:hover {animation-name: shake; animation-duration: 3s; animation-iteration-count: infinite;}
-	@keyframes shake{
-		0%{transform: rotate(0deg);}
-		25%{transform: rotate(-10deg);}
-		50%{transform: rotate(10deg);}
-		75%{transform: rotate(-10deg);}
-		0%{transform: rotate(0deg);}}
-	.box{text-align: center; position: relative; z-index: 1; top: 200px; cursor: pointer;}
+	.main-bg{width: 100%; height: 1000px; background: url('sky.png'); background-size: cover; background-position: center; background-attachment: fixed; }
 
 
+	.line{position: relative; text-align: center; top: -40%; background-size: cover;}
 
-	.flo{ animation-name: turn; animation-duration: 15s; animation-iteration-count: infinite;}
-	@keyframes turn{
+.ani:hover {animation-name: turn; animation-duration: 4s;}
+@keyframes turn { 
+0% {transform: translateZ(-100px) rotate3d(0, 0, 0);}
+100% {transform: translateZ(-100px) rotate3d(1, 0, 1, 360deg) scale(1.5); left: 55%; top: 50%; transform: translate(-50%, -50%);}}
+	.con{width: 600px; height: 550px;position: absolute; perspective: 1500px;
+         left: 50%; top: 50%; transform: translate(-50%, -50%) rotateY(-50deg)rotateX(20deg) rotateZ(-10deg); transform-style: preserve-3d; cursor: pointer; }
+
+        .rect{width: 200px; height: 200px;
+                position: absolute; left: 200px; top: 200px;}
+        .rect2 {width: 200px; height: 400px; position: absolute; left: 200px; top: 200px;}
+        .white{background: white; color: black; font-size:1rem;}
+        .gray{background: #D1D1D1;}
+        .gray2{background: #F4F4F4;}
+     	.r1{transform: translate(0,-200px) rotateY(90deg) translateX(200px)translate3D(0,0,-100px);}
+        .r2{transform: translate3D(-200px,0,100px)}
+        .r3{transform: translate(0px,-200px) translate3D(0,0,-100px)}
+        	
+         .r3 h2{width: 500px; text-align: center; line-height: 0; transform: rotateZ(90deg) translate(155px,75px); font-size: 2.8rem; font-weight: 500;}
+         .r3 p{transform: rotateZ(90deg) translate(175px,25px); width: 300px; font-weight: 300; }
+         .r3 p2 {transform: rotateZ(90deg) translate(175px,25px); width: 300px; font-weight: 300; }
+
+        .r5{transform: translate(0,-200px) rotateY(90deg)translate3D(0,0,-100px); }
+
+        .r6{transform: translate(-300px) rotateY(90deg);}
+        .r7{transform: translate3D(-200px,0,-100px)}
+        .r8{transform: translate(0px,-200px) rotateY(90deg) translateX(200px) translate3D(0,0,100px);}
+        .r9{transform: translate(0px,-200px) translate3D(0,0,-200px)}
+        .r10{transform: rotateX(90deg) translateZ(100px) translate3D(0,0,200px)}
+        .r11{transform: rotateX(90deg) translateZ(100px) translateY(-200px) translate3D(0px,0,0px)}
+        .r12{transform: rotateX(90deg) translateZ(100px) translateY(-200px) translate3D(0px,0,200px)}
+      
+        .r13{transform: rotateX(90deg) translateZ(100px) translate3D(-200px,0,0px)}
+        .r14{transform: rotateX(90deg) translateZ(100px) translate3D(-200px,0,-200px)}
+
+ 	.flo{ animation-name: spin; animation-duration: 15s; animation-iteration-count: infinite;}
+	@keyframes spin{
 		0%{transform: rotate(0deg);}
 		100%{transform: rotate(360deg) scale(0.7);}}
-	.flo{width: 150px; position: relative; z-index: 5; top: -700px; left:40px;}
+	.flo{width: 150px; position: relative; z-index: 5; top:-1500px; left:100px;}
 
-	.flo1{ animation-name: turn1; animation-duration: 15s; animation-iteration-count: infinite;}
-	@keyframes turn1{
+	.flo1{ animation-name: spin1; animation-duration: 15s; animation-iteration-count: infinite;}
+	@keyframes spin1{
 		0%{transform: rotate(0deg);}
 		100%{transform: rotate(-360deg) scale(1.3);}}
-	.flo1{width: 150px; position: relative; z-index: 5;top: -200px; left:1000px;}
+	.flo1{width: 150px; position: relative; z-index: 5;top: -1200px; left:1000px;}
 
+	.overview{margin-top: 300px; margin-bottom: 200px; width: 100%; height: 1000px; background: url(bg-font.png); background-size: 100%; background-repeat: no-repeat;}
 
+	span{font-weight: 500;}
+	.post{background: black; width: 133px; height: 23px; font-weight: 300; color: white;
+		padding: 20px; text-align: left; font-size: 1.3rem;}
+	.post1{background: #FFFF00; width: 400px; height: 450px; font-weight: 300; color: black; line-height: 37px; padding: 30px; text-align: left; float: left;}
+	.post3{background: #FFFF00; width: 260px; height: 300px; font-weight: 300; color: black; line-height: 37px; padding: 30px; text-align: left; float: right; position: relative; top: 100px; left: -440px;}
+	.post2{background: #FFFF00; width: 700px; height: 220px; font-weight: 300; color: black; line-height: 37px; padding: 30px; text-align: left; float: right; position: relative;}
+	.post4{font-size: 1.5rem; background: #FFFF00; width: 290px; height: 70px; font-weight: 500; color: black; line-height: 37px; padding: 50px; text-align:center; float: right; position: relative; top: 280px; left: 310px;}
+	.flower{width: 100%; height: 207px; position: relative; left: 20%;}
+	.f1{width: 150px; float: left; position: relative;}
+	.f2{width: 150px;float:left;position: relative;left: 150px; top:2px }
+	.f3{width: 150px;float: left;position: relative;left: 300px; top: -12px}
+	.f4{width: 150px; float: left; position: relative; left: 450px; top: -26px}
 
-	.overview{margin-top: 300px; width: 100%; height: 1000px; background: url(bg-font.png); background-size: 100%; background-repeat: no-repeat;}
+	.per1{background: black; width: 100%; height: 2500px;}
+	.A{position: relative; top: -2200px;}
+	.ra{position: relative; left: 650px; top: -870px;}
+	.p1{position: relative; left: 750px; top: -3000px; width:440px; color: #FF4E00;}
+	.p1 h1{font-size: 1.4rem;}
+	.p1 p{font-size: 1.2rem; line-height: 37px;}
+
+	.per2{background: black; width: 100%; height: 2603px;}
+	.per3{background: black; width: 100%; height: 2490px;}
+	.per4{background: black; width: 100%; height: 2970px;}
 
 </style>
 </head>
@@ -56,40 +102,99 @@
 				<div class="broom">
 					<p>B'rooming project</p></div>
 				<ul class="navi">
-					<li><a href="#">overview</a></li>
+					<li><a href="#a">overview</a></li>
 					<li><a href="#">archive</a></li>
 					<li><a href="#">items</a></li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="line">
-			<img src="line.svg">
-		</div>
+		<div class="line"><img src="line.svg" style="width:100%"></div>
 
-		<div class="row">	
-			<div class="box">
-				<p><img src="box.png" style="width:1000px;"><p>
-			</div>
-		
+		<div class="con ani">
+      	  <div class="white rect r1"></div>
+      	  <div class="white  rect r2"></div>
+      	  <div class="white  rect2 r3"><h2>WHERE WE LIVE</h2>
+      	  <p>Bloom your room that has been changed due to COVID-19</p>
+      	  </div>
+       	  <div class="gray2 rect2 r5"></div>
+       	  <div class="white  rect r6"></div>
+      	  <div class="white  rect r7"></div>
+      	  <div class="white  rect r8"></div>
+      	  <div class="white  rect r9"></div>
+      	  <div class="gray rect r10"></div>
+      	  <div class="gray  rect r11"></div>
+      	  <div class="gray  rect r12"></div>
+      	  <div class="gray  rect r13"></div>
+      	  <div class="gray  rect r14"></div>
+      	</div>
+      	<div class="row">
 			<div class="flo">
-				<img src="flo1.png" style="width:150px">
-			</div>
+				<img src="flo1.png" style="width:150px"></div>
 
 			<div class="flo1">
-				<img src="flo1.png" style="width:150px">
+				<img src="flo1.png" style="width:150px"></div>
+		</div>	
+	</div>
+
+<section id="a">
+	<div class="overview">
+		<div class="row">
+			<div class="post">
+				Project issue
+			</div>
+			<div class="post1">
+				일상생활은 온라인 수업과 재택근무가 중심을 이루었고, 외국어 공부나 취업 준비 등 자기 계발을 위한 행위가 주로 이루어지고 있음을 알 수있다. COVID-19 이후에는 집이 그들의 비공식적 돌봄의 중심이 되어 <span>새로운 패턴의 돌봄 행위</span>가 이루어지고 있었다. 이들은 주로 자기 돌봄의 행위로서 집에서 쉽게 접근 할수 있는 운동, 영상물 시청 등을 가장 빈번하게 수행하고 있었다.  1인가구가 많은 2030대에서 주생활행위의 가장 큰 변화는 여가취미활동의 증가였다. 집안에서 보내는 시간이 길어지고 그에 따른 수행되는 활동들이 다양해지면서 <span>다기능성을 지닌 공간</span>이 추구되고있다. </div>
+			<div class="post2">
+				그저 휴식의 의미만 가지던 “room”의 의미가 생산적인 활동부터 취미활동까지 다양한 활동을 할수 있는 <span>“나만의 플레이그라운드”</span>로 변화하였다. room의 기능의 확장과 개인화가 더욱 발달하고 있다는 것이다. 활동과 행위의 범위가 넓어지고 다양해짐으로써 업무, 학업, 휴식 등 다양한 활동을 기점으로 <span>공간 사이의 분리</span>를 갈망하는 사람들이 증가하였다. 이로인해 공간을 나누는 인테리어 제품들의 선호도가 증가하였으며, 공간이 나누어지면서 방 안에서의 구역마다 <span>새로운 아이템들도 등장</span>하고 있다.
+			</div>
+			<div class="post3">
+				지난 2년간의 시간동안 우리들은 재택근무와 온라인 비대면 교육의 긍정적인 효과와 다양한 가능성을 확인 바 있다.  많은 기업들과 학교들은 <span>대면과 비대면 활동을 병행</span>하는 모습을 보여주고있다.과연 앞으로의 우리들의 “room”생활은 어떻게 변화할 것인가?
+			</div>
+			<div class="post4">
+				당신의 방은 어떠한가요? Bloom your room !
 			</div>
 		</div>
-	
-
-
 	</div>
 
+</section>
+	<div class="row">
+		<div class="flower">
+			<div class="f1">
+			<a href="#d"><img src="f1.png" style="width:150px"></a></div>
+			<div class="f2">
+			<a href="#e"><img src="f2.png" style="width:130px"></a></div>
+			<div class="f3">
+			<a href="#f"><img src="f3.png" style="width:150px"></a></div>
+			<div class="f4">
+			<a href="#g"><img src="f4.png" style="width:120px"></a></div>
+		</div>
+	</div>
+	<div class="per1" id="d">
+		<img src="ruler1.png" style="width:100%; margin-top: -33px;">
+		<div class="row">
+			<div class="A">
+				<div class="r"><img src="room1.png" style="width:40%"></div>
+				<div class="ra"><img src="ph1.png" style="width:50%;"> </div>
+			</div>
+
+			<div class="p1"><h1>COVID-19 이후 방에 변화가 있었나요?</h1>
+			<p>사회적거리두기가 많이 완화되었지만 아직까지도 사람들이 많은 곳에 가는 것은 꺼림칙하더라구요. 영화보는 걸 좋아하는데 영화관은 마스크가 답답하고 팝콘도 못먹고.... 집에서 노트북으로 보는건 화면이 작아서 불편하더라구요. 그래서 빔프로젝터를 구매하고 빔을 쏠 수 있는 간이 스크린을 당근으로 구매했어요! 작은 원룸이지만 가끔씩 저만의 영화관을 만들 수 있어요 ㅎㅎ</p></div>
+
+		</div>
+	</div>
+	<div class="per2" id="e">
+		<img src="ruler2.png" style="width:100%; margin-top:-7px;">
+	</div>
+	<div class="per3" id="f">
+		<img src="ruler3.png" style="width:100%; margin-top:-5px;">
+	</div>
+	<div class="per4" id="g">
+		<img src="ruler4.png" style="width:100%; margin-top:-5px">
+	</div>
 <section>
-	<div class="overview">
-		
-	</div>
 
+	
 </section>
 
 
