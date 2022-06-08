@@ -19,7 +19,7 @@
 	.main-bg{width: 100%; height: 1000px; background: url('sky.png'); background-size: cover; background-position: center; background-attachment: fixed; }
 
 
-	.line{position: relative; text-align: center; top: -40%; background-size: cover;}
+	.line{position: relative; text-align: center; top: -30%; background-size: cover;}
 
 .ani:hover {animation-name: turn; animation-duration: 4s;}
 @keyframes turn { 
@@ -59,13 +59,13 @@
 	@keyframes spin{
 		0%{transform: rotate(0deg);}
 		100%{transform: rotate(360deg) scale(0.7);}}
-	.flo{width: 150px; position: relative; z-index: 5; top:-1500px; left:100px;}
+	.flo{width: 150px; position: relative; z-index: 5; top:-1300px; left:100px;}
 
 	.flo1{ animation-name: spin1; animation-duration: 15s; animation-iteration-count: infinite;}
 	@keyframes spin1{
 		0%{transform: rotate(0deg);}
 		100%{transform: rotate(-360deg) scale(1.3);}}
-	.flo1{width: 150px; position: relative; z-index: 5;top: -1200px; left:1000px;}
+	.flo1{width: 150px; position: relative; z-index: 5;top: -1000px; left:1000px;}
 
 	.overview{margin-top: 300px; margin-bottom: 200px; width: 100%; height: 1000px; background: url(bg-font.png); background-size: 100%; background-repeat: no-repeat;}
 
@@ -76,23 +76,56 @@
 	.post3{background: #FFFF00; width: 260px; height: 300px; font-weight: 300; color: black; line-height: 37px; padding: 30px; text-align: left; float: right; position: relative; top: 100px; left: -440px;}
 	.post2{background: #FFFF00; width: 700px; height: 220px; font-weight: 300; color: black; line-height: 37px; padding: 30px; text-align: left; float: right; position: relative;}
 	.post4{font-size: 1.5rem; background: #FFFF00; width: 290px; height: 70px; font-weight: 500; color: black; line-height: 37px; padding: 50px; text-align:center; float: right; position: relative; top: 280px; left: 310px;}
+
 	.flower{width: 100%; height: 207px; position: relative; left: 20%;}
 	.f1{width: 150px; float: left; position: relative;}
 	.f2{width: 150px;float:left;position: relative;left: 150px; top:2px }
 	.f3{width: 150px;float: left;position: relative;left: 300px; top: -12px}
 	.f4{width: 150px; float: left; position: relative; left: 450px; top: -26px}
 
-	.per1{background: black; width: 100%; height: 2500px;}
-	.A{position: relative; top: -2200px;}
-	.ra{position: relative; left: 650px; top: -870px;}
-	.p1{position: relative; left: 750px; top: -3000px; width:440px; color: #FF4E00;}
-	.p1 h1{font-size: 1.4rem;}
-	.p1 p{font-size: 1.2rem; line-height: 37px;}
 
-	.per2{background: black; width: 100%; height: 2603px;}
-	.per3{background: black; width: 100%; height: 2490px;}
-	.per4{background: black; width: 100%; height: 2970px;}
+	.per1{background: black; width: 100%; height: 2195px; z-index: 4;}
+	.room1{position: relative; top: -2123px; z-index: 1;}
+	.m1{position: relative; z-index: 2; text-align: center; width: 300px; top: -4100px; left: 720px;}
+	.deco1{position: relative; z-index: 2; top: -3450px; left: 500px;}
 
+
+
+	.per2{background: black; width: 100%; height: 2288px; z-index: 5; top: 0;} 
+	.room2{position: relative; top: -2290px; z-index: 1;}
+	.m2{position: relative; z-index: 2; text-align: center; width: 300px; top: -3470px; left: 530px;}
+	.deco2{position: relative; z-index: 2; top: -3050px; left: 400px;}
+
+
+	.per3{background: black; width: 100%; height: 2185px; z-index: 5;}
+	.room3{position: relative; top: -2190px; z-index: 1;}
+	.m3{position: relative; z-index: 2; text-align: center; width: 300px; top: -4150px; left: 700px;}
+	.deco3{position: relative; z-index: 2; top: -3360px; left: 530px;}
+
+	.per4{background: black; width: 100%; height: 2608px;  z-index: 5;}
+	.room4{position: relative; top: -2610px; z-index: 1;}
+	.m4{position: relative; z-index: 2; text-align: center; width: 300px; top: -3850px; left: 490px;}
+	.deco4{position: relative; z-index: 2; top: -3460px; left: 410px;}
+
+	.text{text-align: center; margin-top: 400px;}
+	.text h2{font-size: 3rem; line-height: 1;}
+	.back{background: white; width: 100%; height: 2200px; text-align: center; margin-top: 150px;}
+
+	.mo{position: relative; top: -1590px; right: 360px;}
+	.mo:hover{transform: scale(1.3);}
+	.du{position: relative; top: -1650px; left: 330px;}
+	.du:hover{transform: scale(1.3);}
+	.pl{position: relative; top: -1600px; right: 80px;}
+	.pl:hover{transform: scale(1.3);}
+	.hp{position: relative; top: -1500px; left: 340px;}
+	.hp:hover{transform: scale(1.3);}
+
+	.write{padding: 30px; font-size: 1.5rem; border: 1px solid black; border-radius: 5px; width: 400px; position: relative; z-index: 3; left: 300px; top:-300px; float: left;}
+	button{padding: 30px; font-size: 1.5rem; border-radius: 5px; width: 200px; float: right; position: relative; top: -300px; right: 310px; background: black; border: none; color: white;} 
+
+	.ex{background: #ffff00; height: 200px; padding: 200px; margin-top: 100px; text-align: center; font-size: 1.2rem; line-height: 0.8; font-weight: 100;}
+
+	footer{background: black; height: 100px; color: white; text-align: center; padding: 100px; line-height: 1;}
 </style>
 </head>
 <body>
@@ -171,31 +204,120 @@
 		</div>
 	</div>
 	<div class="per1" id="d">
-		<img src="ruler1.png" style="width:100%; margin-top: -33px;">
-		<div class="row">
-			<div class="A">
-				<div class="r"><img src="room1.png" style="width:40%"></div>
-				<div class="ra"><img src="ph1.png" style="width:50%;"> </div>
-			</div>
-
-			<div class="p1"><h1>COVID-19 이후 방에 변화가 있었나요?</h1>
-			<p>사회적거리두기가 많이 완화되었지만 아직까지도 사람들이 많은 곳에 가는 것은 꺼림칙하더라구요. 영화보는 걸 좋아하는데 영화관은 마스크가 답답하고 팝콘도 못먹고.... 집에서 노트북으로 보는건 화면이 작아서 불편하더라구요. 그래서 빔프로젝터를 구매하고 빔을 쏠 수 있는 간이 스크린을 당근으로 구매했어요! 작은 원룸이지만 가끔씩 저만의 영화관을 만들 수 있어요 ㅎㅎ</p></div>
-
+		<img src="ruler1.png" style="width:100%; margin-top: -33px; position: relative; z-index: 5;">
+		<div class="room1">
+			<img src="room1.png" style="width:100%">	
 		</div>
+			<div class="m1" style="visibility: visible; animation-name: zone1;">
+				<img src="m1.png"style="width:50%">
+				<img src="m2.png" style="width:50%; position: relative; right: 350px; top: 100px;">
+			</div>
+			<div class="deco1">
+				<img src="f1.png" style="width:150px">
+				<img src="f1.png" style="width:150px; position:relative; top:300px; left: 50px;">
+			</div>
+	
+
 	</div>
 	<div class="per2" id="e">
-		<img src="ruler2.png" style="width:100%; margin-top:-7px;">
+		<img src="ruler2.png" style="width:100%; margin-top:-7px; position: relative; z-index: 5;">
+		<div class="room2">
+			<img src="room2.png" style="width:100%">	
+		</div>
+			<div class="m2">
+				<img src="m3.png"style="width:50%">
+			</div>
+			<div class="deco2">
+				<img src="f2.png" style="width:150px">
+				<img src="f2.png" style="width:150px; position:relative; left: 180px;">
+			</div>
+			
+
 	</div>
 	<div class="per3" id="f">
-		<img src="ruler3.png" style="width:100%; margin-top:-5px;">
+		<img src="ruler3.png" style="width:100%; margin-top:-5px; position: relative; z-index: 5;">
+		<div class="room3">
+			<img src="room3.png" style="width:100%">	
+		</div>
+
+			<div class="m3">
+				<img src="m4.png"style="width:50%">
+			</div>
+			<div class="deco3">
+				<img src="f3.png" style="width:150px">
+				<img src="f3.png" style="width:150px; position:relative; top: 400px; left:-160px;">
+			</div>
+	</div>
+
+
 	</div>
 	<div class="per4" id="g">
-		<img src="ruler4.png" style="width:100%; margin-top:-5px">
+		<img src="ruler4.png" style="width:100%; margin-top:-5px; position: relative; z-index: 5;">
+		<div class="room4">
+			<img src="room4.png" style="width:100%">	
+		</div>
+			<div class="m4">
+				<img src="m5.png"style="width:100%">
+			</div>
+			<div class="deco4">
+				<img src="f4.png" style="width:150px">
+				<img src="f4.png" style="width:150px;">
+				<img src="f4.png" style="width:150px;">
+			</div>
 	</div>
-<section>
 
-	
+
 </section>
+
+<section>
+	<div class="row">
+
+		<div class="text">
+			<h2>여러분의 방을 위해 </h2>
+			<h2>새롭게 데려온 아이템들이 있을까요? </h2>
+			<p>New items for my room!</p>
+		</div>
+
+		<div class="back">
+			<img src="floback.png" style="width:100%;">
+			<div class="mo">
+				<img src="monitor.png" style="width:25%;">
+			</div>
+			<div class="du"> 
+				<img src="dumb.png" style="width: 30%;">
+			</div>
+			<div class="pl"> 
+				<img src="plant.png" style="width: 15%;">
+			</div>
+			<div class="hp"> 
+				<img src="headphone.png" style="width: 25%;">
+			</div>
+		</div>
+		<form>
+			<input class="write" type="text" placeholder="당신의 뉴 아이템을 적으세요.">
+		</form>
+
+		<div> 
+			<button type="submit">등록</button>
+		</div>
+
+	</div>
+
+</section>
+
+<section>
+	<div class="ex">
+	<p>*이 웹사이트는 COVID-19 이후 변화된 방의 의미와 형태를 통해</p>
+	<p>나타난 라이프스타일을 아카이빙하고자 제작되었습니다.</p>
+	<p>위 콘텐츠들은 인터뷰와 논문 <코로나19 발생에 따른 청년 1인가구의 주생활행위 변화>을</p>
+	<p>기반으로 가상으로 설계하였습니다.</p>
+	</div>
+</section>
+
+<footer>
+	<p>copyright. 2022 cinhwayeon</p>
+	<p>All rights reserved</p>
+</footer>
 
 
 
